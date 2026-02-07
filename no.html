@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valentim</title>
+    <style>
+    body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center; 
+        align-items: center;  
+        background: white;
+    }
+
+    .container{
+        border: 50px solid palevioletred;
+        border-radius: 25px;
+        width: 600px;
+        height: 640px;
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Tens acerteza que não queres ?</h1>
+<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmp5YmhlOHV1Ymlka2NqcW84bWF3dnYzd3c0MnpxbGFucmV3dmU5ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eKrgVyZ7zLvJrgZNZn/giphy.gif" alt="gif fofo">
+
+<br>
+<button id="yes">SIM</button>
+<button id="no">NÃO</button>
+</div>
+</body>
+</html>
+<script>
+    const yesBTN = document.getElementById("yes");
+    const noBTN = document.getElementById("no");
+
+    let scale = 1;
+
+    noBTN.addEventListener("click", () => {
+        window.location.href = "main.html";
+    });
+
+    yesBTN.addEventListener("click", () => {
+        scale -= 0.1; 
+
+        if (scale <= 0.2) {
+            scale = 0.2;
+        }
+
+        yesBTN.style.transform = `scale(${scale})`;
+    });
+</script>

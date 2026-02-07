@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valentim</title>
+    <style>
+    body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center; 
+        align-items: center;  
+        background: white;
+    }
+
+    .container{
+        border: 50px solid palevioletred;
+        border-radius: 25px;
+        width: 600px;
+        height: 640px;
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Feliz dia dos namorados!</h1>
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWpvODZsMHR5M3BybXJxNDg1eWl6eHlvZTlkMWpta3N2MnZzbXRleiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8QbwUh40Hl96yMgvOx/giphy.gif" alt="gif fofo">
+<p>Queres ser o meu Valentim?</p>
+
+<button id="yes">SIM</button>
+<button id="no">NÃO</button>
+</div>
+
+
+
+</body>
+</html>
+<script>
+    const yesBTN = document.getElementById("yes");
+    const noBTN = document.getElementById("no");
+
+    
+
+    yesBTN.addEventListener("click", () => {
+        window.location.href = "yes.html";
+    });
+
+    noBTN.addEventListener("click", () => {
+        window.location.href = "no.html";
+    });
+        
+</script>
